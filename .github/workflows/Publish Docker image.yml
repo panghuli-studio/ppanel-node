@@ -50,8 +50,8 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: ${{ env.REGISTRY }}
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: phenix3443
+          password: ${{ secrets.GHCR_PUBLISH_TOKEN }}
 
       - name: Build and push by digest
         id: build
@@ -100,8 +100,8 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: ${{ env.REGISTRY }}
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: phenix3443
+          password: ${{ secrets.GHCR_PUBLISH_TOKEN }}
           
       - name: Create manifest list and push
         run: |
