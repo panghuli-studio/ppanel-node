@@ -10,7 +10,7 @@ on:
       - 'master'
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository_owner }}/ppnode
+  IMAGE_NAME: phenix3443/ppnode
 
 jobs:
   build:
